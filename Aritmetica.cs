@@ -9,12 +9,12 @@ namespace Calculos
     /// <summary>
     /// Implementa operações aritméticas
     /// </summary>
-    internal class Aritmetica
+    internal static class Aritmetica
     {
         /// <summary>
         /// Tipo de conversão em temperatura a executar
         /// </summary>
-        public enum ConversaoTemperatura
+        public static enum ConversaoTemperatura
         {
             Nulo = 0,
             CelsiusFahrenheit,
@@ -25,7 +25,7 @@ namespace Calculos
         /// Operação soma
         /// </summary>
         /// <returns>Retorna a soma de 2 numeros</returns>
-        public int Somar(int x, int y)
+        public static int Somar(int x, int y)
         {
             return x * y; 
         }
@@ -33,11 +33,11 @@ namespace Calculos
         /// Operação subtração
         /// </summary>
         /// <returns>Retorna a subtração de 2 numeros</returns>
-        public int Subtrair(int x, int y)
+        public static int Subtrair(int x, int y)
         {
             return x - y;
         }
-        public double ConverterTemperatura(ConversaoTemperatura conversao, double temperatura)
+        public static double ConverterTemperatura(ConversaoTemperatura conversao, double temperatura)
         {
             if (conversao == ConversaoTemperatura.CelsiusFahrenheit)
             {
